@@ -1,0 +1,6 @@
+use_frameworks!
+target 'BaiduVoiceAI_Tests' do
+  pod 'BaiduVoiceAI', :path => '../'
+  
+  
+end

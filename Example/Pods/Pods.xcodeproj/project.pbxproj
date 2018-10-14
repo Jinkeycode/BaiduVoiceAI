@@ -1,0 +1,871 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0DB8ABD4CF8809877D7CB22409C9E208 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B5639E32A3B584E233BC159B3811274 /* AVFoundation.framework */; };
+		16B36304C9BF21676CCB7BDBB56FFA0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFF11CCCD92CE13132D33B3EB82974B5 /* Foundation.framework */; };
+		18C0A0BB10BFFDF48C0BB21A8EA07A65 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C383A42DF8CACD9BB4B581FFF0D5FD /* CoreTelephony.framework */; };
+		18C5AB5A8CA0E51AE6C53536C21A1219 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9499FB0BAFDDA058578C66F5C790D4F5 /* GLKit.framework */; };
+		1AD49276CE5E0863A93C62E70BD5628D /* BDSSpeechSynthesizerErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E1F9A104FAC3C21EC062481BD10C468 /* BDSSpeechSynthesizerErrors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E5BA91033D2F981053876BDA339D43E /* BDRecognizerViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 77533A554C64F5E36706B6570956444D /* BDRecognizerViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2323A846C163330E5E222023340168E3 /* BDRecognizerViewParamsObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C443003AA6F3140ABBD4670C26DB307 /* BDRecognizerViewParamsObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23C0F6E447E1C6EF17D421BBB073AE10 /* BDSSpeechSynthesizer.h in Headers */ = {isa = PBXBuildFile; fileRef = E424CC3DD31E4DD1C0FC193D3662A827 /* BDSSpeechSynthesizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24FB4D7FB70FEE16A5FD490330B682FE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152C8C2EE11011198429C28393AE375B /* AudioToolbox.framework */; };
+		28112490B493FEC8AFE24639EDDA57D7 /* libBaiduSpeechSDK.a in Sources */ = {isa = PBXBuildFile; fileRef = D85A316FF57F51072843F6A56A5D28A4 /* libBaiduSpeechSDK.a */; };
+		37D1D7A392CBA4E1B2AEC7E431E71575 /* BDSMixedModeSynthesizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BF14C7FA4ED0E7A64A50180A01E3704 /* BDSMixedModeSynthesizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		409F491210E6421E987A8AD454757884 /* BDSASRDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 68CEE04D6D33F6AE363E747A7053C313 /* BDSASRDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D74F0A3A9F16255CABCEF8BE002588D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F834222C5E937EC731C724B773D7FF4 /* CFNetwork.framework */; };
+		56A4E39DDF4AAE89A93DE0DE9374C1A4 /* BDSASRParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = A7C863A5428235246337447B9A9CA8B4 /* BDSASRParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56B376253D8ADB56F9294A29BED190D9 /* BDSTTSEventManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BBF624C4FA1BE86086D28213B219B7C0 /* BDSTTSEventManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		583BD83935E3D2BC7D075C2DE04F60C6 /* BDRecognizerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 17CE4F30B999809590D32746ABBEE01C /* BDRecognizerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C72FE89830B54986368E7570D23E79F /* ASR in Resources */ = {isa = PBXBuildFile; fileRef = C8D354F4036CAC9931D5A9436B5F1517 /* ASR */; };
+		7B6298D986D89C514AC0F0FEF6874396 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A3B895B0CA9D03416CF28BEDEFB457C /* CoreLocation.framework */; };
+		7F15940D9D0CB3CE2407356E41F4A3DE /* BaiduVoiceAI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 55BA35686DB0C9E903E0D00EE2A48CC5 /* BaiduVoiceAI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82E4D961D8CF3659C943D1FEC7317827 /* BDSWakeupDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = BCEE84E397641DBCB6D910F026370D7B /* BDSWakeupDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96862B1CE735CDC263F8BF5AB734829D /* Pods-BaiduVoiceAI_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C5EC5F11CAF55DF0407701226D0FEF80 /* Pods-BaiduVoiceAI_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		97B17B65ADEEF8974A4AC707E46F658B /* BaiduVoiceAI.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 064758A88F9FD0850C3B9AFF6AF6D217 /* BaiduVoiceAI.bundle */; };
+		A51EAD911D558642566D9266ACE9C6C6 /* BDSEventManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3952AB03784B6F6A45C7D300AD83E1ED /* BDSEventManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE623C927DC44C4DEDC0735F68E8BEE5 /* BaiduVoiceAI.h in Headers */ = {isa = PBXBuildFile; fileRef = D8B4F8E500287ED49B04963AA6B80749 /* BaiduVoiceAI.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B72E902E05DAA15C8DABE2A551A7FEBF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B699C6E301B0537982DF2BBADBDAAB0 /* SystemConfiguration.framework */; };
+		BB09BFA8776582CF0D0F4EE9310D9C17 /* BDSBuiltInPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3509E8659A2280974E864E94BA1FB5C3 /* BDSBuiltInPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C017BB82535C92FC24909BD278F3B9AF /* BDSUploaderParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 633027F823348786BBE51F5E2EB59091 /* BDSUploaderParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C82C5DF877AFE823C79465DE20DFDF03 /* TTS in Resources */ = {isa = PBXBuildFile; fileRef = 98822A0E1CBA036A37FFE46510521B50 /* TTS */; };
+		CAF58AF6DFA59C8752D3DCC720935666 /* BDSUploaderDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = FFADDFFD0FA019B8E2FAD6D746C4BE79 /* BDSUploaderDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D897C13E7E364E0564B4391C94AB52EB /* Pods-BaiduVoiceAI_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5340D4FB2B9CB7FE3CE940FBC0E6E6A6 /* Pods-BaiduVoiceAI_Tests-dummy.m */; };
+		D9B1D11768CDE291A7F108D66998A385 /* BDSSpeechSynthesizerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = A28FF380363946ABD73DB2811F4F723E /* BDSSpeechSynthesizerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFE377983F9A2F50BB664A63004A89C8 /* BDSSpeechSynthesizerParams.h in Headers */ = {isa = PBXBuildFile; fileRef = 185F199FA53C3855CE60B6AC67FEAFE4 /* BDSSpeechSynthesizerParams.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E40B458C314D36856F4F18FB1579D7ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFF11CCCD92CE13132D33B3EB82974B5 /* Foundation.framework */; };
+		E4E99CF5BD0B8A8EBAAFC76EABD4C622 /* BDSWakeupParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C3716312FAB45D8AB02BC0435B17E4D /* BDSWakeupParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA049A0BC24C7A271E617D603DB0F35F /* BaiduVoiceAI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF8597FD27CB9E5DAA1FEF2B98891AF /* BaiduVoiceAI-dummy.m */; };
+		F9EF345E61E40EBDDC250286B583D7CD /* BDS_EttsModelManagerInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA18756C0471E67F03576B603F4FAB6 /* BDS_EttsModelManagerInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBF114BDEA5D9A250C40633A78898655 /* BDTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = A0C2A1F7CF2CA557E729A1AE24EA21E8 /* BDTheme.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE61725AAAA1379518498A722C4CC83B /* BDSSynthesizerLogLevel.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AEF22A64E7F7C4507A6C82F67885CE7 /* BDSSynthesizerLogLevel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		198CECDE34F58697183F0B9567BEB6F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE4118D5E9767A7AAE75973298F7D3EE;
+			remoteInfo = BaiduVoiceAI;
+		};
+		7DC30AE1F4C3024789A27A5E8D6126E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2B603061EA8AA499217A07047962629;
+			remoteInfo = "BaiduVoiceAI-BaiduVoiceAI";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		064758A88F9FD0850C3B9AFF6AF6D217 /* BaiduVoiceAI.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = BaiduVoiceAI.bundle; path = "BaiduVoiceAI-BaiduVoiceAI.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C3716312FAB45D8AB02BC0435B17E4D /* BDSWakeupParameters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BDSWakeupParameters.h; sourceTree = "<group>"; };
+		0CCE8616E311AFDE7D36DE6DEE733187 /* Pods-BaiduVoiceAI_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BaiduVoiceAI_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		152C8C2EE11011198429C28393AE375B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		17CE4F30B999809590D32746ABBEE01C /* BDRecognizerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BDRecognizerViewController.h; sourceTree = "<group>"; };
+		183E4BC6027EAD996AD51B5672EC6D3F /* BaiduVoiceAI.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BaiduVoiceAI.xcconfig; sourceTree = "<group>"; };
+		185F199FA53C3855CE60B6AC67FEAFE4 /* BDSSpeechSynthesizerParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BDSSpeechSynthesizerParams.h; sourceTree = "<group>"; };
+		1B5639E32A3B584E233BC159B3811274 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		23147D8D798CF3D7242408237AED79BE /* Pods-BaiduVoiceAI_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BaiduVoiceAI_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		27AEE583EE4025EAFB9EE40E5D977077 /* Pods-BaiduVoiceAI_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BaiduVoiceAI_Tests-resources.sh"; sourceTree = "<group>"; };
+		2E1F9A104FAC3C21EC062481BD10C468 /* BDSSpeechSynthesizerErrors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BDSSpeechSynthesizerErrors.h; sourceTree = "<group>"; };
+		3509E8659A2280974E864E94BA1FB5C3 /* BDSBuiltInPlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BDSBuiltInPlayer.h; sourceTree = "<group>"; };
+		3952AB03784B6F6A45C7D300AD83E1ED /* BDSEventManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BDSEventManager.h; sourceTree = "<group>"; };
+		3CBAFC4B77ED9BC88F9E4C97BD6DCA74 /* Pods-BaiduVoiceAI_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BaiduVoiceAI_Tests.modulemap"; sourceTree = "<group>"; };
+		5340D4FB2B9CB7FE3CE940FBC0E6E6A6 /* Pods-BaiduVoiceAI_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BaiduVoiceAI_Tests-dummy.m"; sourceTree = "<group>"; };
+		55BA35686DB0C9E903E0D00EE2A48CC5 /* BaiduVoiceAI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BaiduVoiceAI-umbrella.h"; sourceTree = "<group>"; };
+		5B699C6E301B0537982DF2BBADBDAAB0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		5DA18756C0471E67F03576B603F4FAB6 /* BDS_EttsModelManagerInterface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BDS_EttsModelManagerInterface.h; sourceTree = "<group>"; };
+		633027F823348786BBE51F5E2EB59091 /* BDSUploaderParameters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BDSUploaderParameters.h; sourceTree = "<group>"; };
+		67F7D4436CD45D111A4008715F320C74 /* BaiduVoiceAI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BaiduVoiceAI.modulemap; sourceTree = "<group>"; };
+		68CEE04D6D33F6AE363E747A7053C313 /* BDSASRDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BDSASRDefines.h; sourceTree = "<group>"; };
+		6A3B895B0CA9D03416CF28BEDEFB457C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		6AEF22A64E7F7C4507A6C82F67885CE7 /* BDSSynthesizerLogLevel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BDSSynthesizerLogLevel.h; sourceTree = "<group>"; };
+		6F834222C5E937EC731C724B773D7FF4 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		71BA7CF287D0BD57C33E389D7FFA7096 /* Pods-BaiduVoiceAI_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BaiduVoiceAI_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		7316A6AE0C570547AD42EFBDEF6700A1 /* BaiduVoiceAI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BaiduVoiceAI.framework; path = BaiduVoiceAI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77533A554C64F5E36706B6570956444D /* BDRecognizerViewDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BDRecognizerViewDelegate.h; sourceTree = "<group>"; };
+		779ADF5074104655D4AE851BC69E0C7A /* BaiduVoiceAI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = BaiduVoiceAI.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		857D82B045366B9932E4D0B595DFFDE8 /* Pods_BaiduVoiceAI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BaiduVoiceAI_Tests.framework; path = "Pods-BaiduVoiceAI_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BF14C7FA4ED0E7A64A50180A01E3704 /* BDSMixedModeSynthesizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BDSMixedModeSynthesizer.h; sourceTree = "<group>"; };
+		9178A109E58ACB37FC8D95D848BD09EB /* ResourceBundle-BaiduVoiceAI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-BaiduVoiceAI-Info.plist"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9499FB0BAFDDA058578C66F5C790D4F5 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/GLKit.framework; sourceTree = DEVELOPER_DIR; };
+		98822A0E1CBA036A37FFE46510521B50 /* TTS */ = {isa = PBXFileReference; includeInIndex = 1; name = TTS; path = BaiduVoiceAI/Assets/TTS; sourceTree = "<group>"; };
+		9C443003AA6F3140ABBD4670C26DB307 /* BDRecognizerViewParamsObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BDRecognizerViewParamsObject.h; sourceTree = "<group>"; };
+		9EE40385B67E934E72F735AEF2E4A117 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0C2A1F7CF2CA557E729A1AE24EA21E8 /* BDTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BDTheme.h; sourceTree = "<group>"; };
+		A28FF380363946ABD73DB2811F4F723E /* BDSSpeechSynthesizerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BDSSpeechSynthesizerDelegate.h; sourceTree = "<group>"; };
+		A7C863A5428235246337447B9A9CA8B4 /* BDSASRParameters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BDSASRParameters.h; sourceTree = "<group>"; };
+		B7430360D5959291DE4B2305D261A068 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		BAF8597FD27CB9E5DAA1FEF2B98891AF /* BaiduVoiceAI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BaiduVoiceAI-dummy.m"; sourceTree = "<group>"; };
+		BB98FA387F915309594BADECF01BC2A3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		BBF624C4FA1BE86086D28213B219B7C0 /* BDSTTSEventManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BDSTTSEventManager.h; sourceTree = "<group>"; };
+		BCEE84E397641DBCB6D910F026370D7B /* BDSWakeupDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BDSWakeupDefines.h; sourceTree = "<group>"; };
+		BFD09A08502914EADFFDA8DFE13867EC /* Pods-BaiduVoiceAI_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BaiduVoiceAI_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		C5EC5F11CAF55DF0407701226D0FEF80 /* Pods-BaiduVoiceAI_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BaiduVoiceAI_Tests-umbrella.h"; sourceTree = "<group>"; };
+		C8D354F4036CAC9931D5A9436B5F1517 /* ASR */ = {isa = PBXFileReference; includeInIndex = 1; name = ASR; path = BaiduVoiceAI/Assets/ASR; sourceTree = "<group>"; };
+		D297232C8B048D7097A2DC9DB8CD79C9 /* BaiduVoiceAI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BaiduVoiceAI-prefix.pch"; sourceTree = "<group>"; };
+		D85A316FF57F51072843F6A56A5D28A4 /* libBaiduSpeechSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libBaiduSpeechSDK.a; sourceTree = "<group>"; };
+		D8B4F8E500287ED49B04963AA6B80749 /* BaiduVoiceAI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BaiduVoiceAI.h; path = BaiduVoiceAI/Classes/BaiduVoiceAI.h; sourceTree = "<group>"; };
+		E424CC3DD31E4DD1C0FC193D3662A827 /* BDSSpeechSynthesizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BDSSpeechSynthesizer.h; sourceTree = "<group>"; };
+		E7C383A42DF8CACD9BB4B581FFF0D5FD /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
+		EC10EC0C7C434F929C7B3A92026617B4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDCA894D172A799EBC703AB19EB2FC65 /* Pods-BaiduVoiceAI_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BaiduVoiceAI_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EFF11CCCD92CE13132D33B3EB82974B5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		FFADDFFD0FA019B8E2FAD6D746C4BE79 /* BDSUploaderDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BDSUploaderDefines.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		38BDFB335892159CA793CC1613E4D9DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		624CEFA54ADA57DAD80E1F6E5EA23315 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16B36304C9BF21676CCB7BDBB56FFA0A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A03977D6F90B311E924AAE1744521C2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24FB4D7FB70FEE16A5FD490330B682FE /* AudioToolbox.framework in Frameworks */,
+				0DB8ABD4CF8809877D7CB22409C9E208 /* AVFoundation.framework in Frameworks */,
+				4D74F0A3A9F16255CABCEF8BE002588D /* CFNetwork.framework in Frameworks */,
+				7B6298D986D89C514AC0F0FEF6874396 /* CoreLocation.framework in Frameworks */,
+				18C0A0BB10BFFDF48C0BB21A8EA07A65 /* CoreTelephony.framework in Frameworks */,
+				E40B458C314D36856F4F18FB1579D7ED /* Foundation.framework in Frameworks */,
+				18C5AB5A8CA0E51AE6C53536C21A1219 /* GLKit.framework in Frameworks */,
+				B72E902E05DAA15C8DABE2A551A7FEBF /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10A9C95143008D4701CCD1436887EA32 /* ASR */ = {
+			isa = PBXGroup;
+			children = (
+				68CEE04D6D33F6AE363E747A7053C313 /* BDSASRDefines.h */,
+				A7C863A5428235246337447B9A9CA8B4 /* BDSASRParameters.h */,
+				3952AB03784B6F6A45C7D300AD83E1ED /* BDSEventManager.h */,
+				FFADDFFD0FA019B8E2FAD6D746C4BE79 /* BDSUploaderDefines.h */,
+				633027F823348786BBE51F5E2EB59091 /* BDSUploaderParameters.h */,
+				BCEE84E397641DBCB6D910F026370D7B /* BDSWakeupDefines.h */,
+				0C3716312FAB45D8AB02BC0435B17E4D /* BDSWakeupParameters.h */,
+				1A37E9F80157598F0696F8B987D67DFC /* UIHeaders */,
+			);
+			name = ASR;
+			path = ASR;
+			sourceTree = "<group>";
+		};
+		16017CB6CE4ACC26514AF387371C7687 /* TTS */ = {
+			isa = PBXGroup;
+			children = (
+				5DA18756C0471E67F03576B603F4FAB6 /* BDS_EttsModelManagerInterface.h */,
+				3509E8659A2280974E864E94BA1FB5C3 /* BDSBuiltInPlayer.h */,
+				8BF14C7FA4ED0E7A64A50180A01E3704 /* BDSMixedModeSynthesizer.h */,
+				E424CC3DD31E4DD1C0FC193D3662A827 /* BDSSpeechSynthesizer.h */,
+				A28FF380363946ABD73DB2811F4F723E /* BDSSpeechSynthesizerDelegate.h */,
+				2E1F9A104FAC3C21EC062481BD10C468 /* BDSSpeechSynthesizerErrors.h */,
+				185F199FA53C3855CE60B6AC67FEAFE4 /* BDSSpeechSynthesizerParams.h */,
+				6AEF22A64E7F7C4507A6C82F67885CE7 /* BDSSynthesizerLogLevel.h */,
+				BBF624C4FA1BE86086D28213B219B7C0 /* BDSTTSEventManager.h */,
+			);
+			name = TTS;
+			path = TTS;
+			sourceTree = "<group>";
+		};
+		1A37E9F80157598F0696F8B987D67DFC /* UIHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				17CE4F30B999809590D32746ABBEE01C /* BDRecognizerViewController.h */,
+				77533A554C64F5E36706B6570956444D /* BDRecognizerViewDelegate.h */,
+				9C443003AA6F3140ABBD4670C26DB307 /* BDRecognizerViewParamsObject.h */,
+				A0C2A1F7CF2CA557E729A1AE24EA21E8 /* BDTheme.h */,
+			);
+			name = UIHeaders;
+			path = UIHeaders;
+			sourceTree = "<group>";
+		};
+		50A4078F331D233F1C8B54444BC29DA6 /* BDSClientLib */ = {
+			isa = PBXGroup;
+			children = (
+				D85A316FF57F51072843F6A56A5D28A4 /* libBaiduSpeechSDK.a */,
+			);
+			name = BDSClientLib;
+			path = BaiduVoiceAI/Classes/BDSClientLib;
+			sourceTree = "<group>";
+		};
+		5889DF5B8F6579152DE60EB895996C51 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				064758A88F9FD0850C3B9AFF6AF6D217 /* BaiduVoiceAI.bundle */,
+				7316A6AE0C570547AD42EFBDEF6700A1 /* BaiduVoiceAI.framework */,
+				857D82B045366B9932E4D0B595DFFDE8 /* Pods_BaiduVoiceAI_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6CC6D51843E467F75C555EC3C3FDCB86 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C8D354F4036CAC9931D5A9436B5F1517 /* ASR */,
+				98822A0E1CBA036A37FFE46510521B50 /* TTS */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		719A7A8CFDDCEBFE98A228ADD9235282 /* BaiduVoiceAI */ = {
+			isa = PBXGroup;
+			children = (
+				D8B4F8E500287ED49B04963AA6B80749 /* BaiduVoiceAI.h */,
+				94784C4E6B86ACFDCD9337186F0D825D /* BDSClientHeaders */,
+				50A4078F331D233F1C8B54444BC29DA6 /* BDSClientLib */,
+				E152181A4D57D76BF8B2AE9797C0F084 /* Pod */,
+				6CC6D51843E467F75C555EC3C3FDCB86 /* Resources */,
+				85CD1487689DBFC1D02C288F0B9084B8 /* Support Files */,
+			);
+			name = BaiduVoiceAI;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		785553737B06AFC3DA711DDEB7D56194 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBA3C16153AA93D8AC6A51E6106942BD /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				AF85E44CEBF146DF156D34D693C2F96E /* Development Pods */,
+				785553737B06AFC3DA711DDEB7D56194 /* Frameworks */,
+				5889DF5B8F6579152DE60EB895996C51 /* Products */,
+				855FD42A3303A462555E021972BE690C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		855FD42A3303A462555E021972BE690C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D19E08E7CC30C83FF850E2E5B4444558 /* Pods-BaiduVoiceAI_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		85CD1487689DBFC1D02C288F0B9084B8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				67F7D4436CD45D111A4008715F320C74 /* BaiduVoiceAI.modulemap */,
+				183E4BC6027EAD996AD51B5672EC6D3F /* BaiduVoiceAI.xcconfig */,
+				BAF8597FD27CB9E5DAA1FEF2B98891AF /* BaiduVoiceAI-dummy.m */,
+				D297232C8B048D7097A2DC9DB8CD79C9 /* BaiduVoiceAI-prefix.pch */,
+				55BA35686DB0C9E903E0D00EE2A48CC5 /* BaiduVoiceAI-umbrella.h */,
+				9EE40385B67E934E72F735AEF2E4A117 /* Info.plist */,
+				9178A109E58ACB37FC8D95D848BD09EB /* ResourceBundle-BaiduVoiceAI-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/BaiduVoiceAI";
+			sourceTree = "<group>";
+		};
+		94784C4E6B86ACFDCD9337186F0D825D /* BDSClientHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				10A9C95143008D4701CCD1436887EA32 /* ASR */,
+				16017CB6CE4ACC26514AF387371C7687 /* TTS */,
+			);
+			name = BDSClientHeaders;
+			path = BaiduVoiceAI/Classes/BDSClientHeaders;
+			sourceTree = "<group>";
+		};
+		AF85E44CEBF146DF156D34D693C2F96E /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				719A7A8CFDDCEBFE98A228ADD9235282 /* BaiduVoiceAI */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		D19E08E7CC30C83FF850E2E5B4444558 /* Pods-BaiduVoiceAI_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EC10EC0C7C434F929C7B3A92026617B4 /* Info.plist */,
+				3CBAFC4B77ED9BC88F9E4C97BD6DCA74 /* Pods-BaiduVoiceAI_Tests.modulemap */,
+				EDCA894D172A799EBC703AB19EB2FC65 /* Pods-BaiduVoiceAI_Tests-acknowledgements.markdown */,
+				0CCE8616E311AFDE7D36DE6DEE733187 /* Pods-BaiduVoiceAI_Tests-acknowledgements.plist */,
+				5340D4FB2B9CB7FE3CE940FBC0E6E6A6 /* Pods-BaiduVoiceAI_Tests-dummy.m */,
+				BFD09A08502914EADFFDA8DFE13867EC /* Pods-BaiduVoiceAI_Tests-frameworks.sh */,
+				27AEE583EE4025EAFB9EE40E5D977077 /* Pods-BaiduVoiceAI_Tests-resources.sh */,
+				C5EC5F11CAF55DF0407701226D0FEF80 /* Pods-BaiduVoiceAI_Tests-umbrella.h */,
+				23147D8D798CF3D7242408237AED79BE /* Pods-BaiduVoiceAI_Tests.debug.xcconfig */,
+				71BA7CF287D0BD57C33E389D7FFA7096 /* Pods-BaiduVoiceAI_Tests.release.xcconfig */,
+			);
+			name = "Pods-BaiduVoiceAI_Tests";
+			path = "Target Support Files/Pods-BaiduVoiceAI_Tests";
+			sourceTree = "<group>";
+		};
+		E152181A4D57D76BF8B2AE9797C0F084 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				779ADF5074104655D4AE851BC69E0C7A /* BaiduVoiceAI.podspec */,
+				B7430360D5959291DE4B2305D261A068 /* LICENSE */,
+				BB98FA387F915309594BADECF01BC2A3 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		EBA3C16153AA93D8AC6A51E6106942BD /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				152C8C2EE11011198429C28393AE375B /* AudioToolbox.framework */,
+				1B5639E32A3B584E233BC159B3811274 /* AVFoundation.framework */,
+				6F834222C5E937EC731C724B773D7FF4 /* CFNetwork.framework */,
+				6A3B895B0CA9D03416CF28BEDEFB457C /* CoreLocation.framework */,
+				E7C383A42DF8CACD9BB4B581FFF0D5FD /* CoreTelephony.framework */,
+				EFF11CCCD92CE13132D33B3EB82974B5 /* Foundation.framework */,
+				9499FB0BAFDDA058578C66F5C790D4F5 /* GLKit.framework */,
+				5B699C6E301B0537982DF2BBADBDAAB0 /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		61CD321A7B77E3A9B7D96D6731D18FD2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F15940D9D0CB3CE2407356E41F4A3DE /* BaiduVoiceAI-umbrella.h in Headers */,
+				AE623C927DC44C4DEDC0735F68E8BEE5 /* BaiduVoiceAI.h in Headers */,
+				583BD83935E3D2BC7D075C2DE04F60C6 /* BDRecognizerViewController.h in Headers */,
+				1E5BA91033D2F981053876BDA339D43E /* BDRecognizerViewDelegate.h in Headers */,
+				2323A846C163330E5E222023340168E3 /* BDRecognizerViewParamsObject.h in Headers */,
+				F9EF345E61E40EBDDC250286B583D7CD /* BDS_EttsModelManagerInterface.h in Headers */,
+				409F491210E6421E987A8AD454757884 /* BDSASRDefines.h in Headers */,
+				56A4E39DDF4AAE89A93DE0DE9374C1A4 /* BDSASRParameters.h in Headers */,
+				BB09BFA8776582CF0D0F4EE9310D9C17 /* BDSBuiltInPlayer.h in Headers */,
+				A51EAD911D558642566D9266ACE9C6C6 /* BDSEventManager.h in Headers */,
+				37D1D7A392CBA4E1B2AEC7E431E71575 /* BDSMixedModeSynthesizer.h in Headers */,
+				23C0F6E447E1C6EF17D421BBB073AE10 /* BDSSpeechSynthesizer.h in Headers */,
+				D9B1D11768CDE291A7F108D66998A385 /* BDSSpeechSynthesizerDelegate.h in Headers */,
+				1AD49276CE5E0863A93C62E70BD5628D /* BDSSpeechSynthesizerErrors.h in Headers */,
+				DFE377983F9A2F50BB664A63004A89C8 /* BDSSpeechSynthesizerParams.h in Headers */,
+				FE61725AAAA1379518498A722C4CC83B /* BDSSynthesizerLogLevel.h in Headers */,
+				56B376253D8ADB56F9294A29BED190D9 /* BDSTTSEventManager.h in Headers */,
+				CAF58AF6DFA59C8752D3DCC720935666 /* BDSUploaderDefines.h in Headers */,
+				C017BB82535C92FC24909BD278F3B9AF /* BDSUploaderParameters.h in Headers */,
+				82E4D961D8CF3659C943D1FEC7317827 /* BDSWakeupDefines.h in Headers */,
+				E4E99CF5BD0B8A8EBAAFC76EABD4C622 /* BDSWakeupParameters.h in Headers */,
+				FBF114BDEA5D9A250C40633A78898655 /* BDTheme.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A998D803CF97FD26B2F8E79133FCC71 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96862B1CE735CDC263F8BF5AB734829D /* Pods-BaiduVoiceAI_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		432D7754B5B960CD5623A0AD38725BEC /* Pods-BaiduVoiceAI_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5140CABA34743340E8FC92D4D418EA61 /* Build configuration list for PBXNativeTarget "Pods-BaiduVoiceAI_Tests" */;
+			buildPhases = (
+				7A998D803CF97FD26B2F8E79133FCC71 /* Headers */,
+				18964D3F0289B5554FC3525909DA3201 /* Sources */,
+				624CEFA54ADA57DAD80E1F6E5EA23315 /* Frameworks */,
+				9CE2A8A083F7114DD4101F4662490D25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0BCBEDD7956C73BABDA2DFAE96B42B58 /* PBXTargetDependency */,
+			);
+			name = "Pods-BaiduVoiceAI_Tests";
+			productName = "Pods-BaiduVoiceAI_Tests";
+			productReference = 857D82B045366B9932E4D0B595DFFDE8 /* Pods_BaiduVoiceAI_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AE4118D5E9767A7AAE75973298F7D3EE /* BaiduVoiceAI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D51DDB179AD294C88E288AFC01ECD90B /* Build configuration list for PBXNativeTarget "BaiduVoiceAI" */;
+			buildPhases = (
+				61CD321A7B77E3A9B7D96D6731D18FD2 /* Headers */,
+				6B7E20A032039594F03F2CB5E107F1A9 /* Sources */,
+				A03977D6F90B311E924AAE1744521C2F /* Frameworks */,
+				AFB20236718CEBA017AC5D5859371964 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA9AFE61D51199D43D0BE7D0C1919F50 /* PBXTargetDependency */,
+			);
+			name = BaiduVoiceAI;
+			productName = BaiduVoiceAI;
+			productReference = 7316A6AE0C570547AD42EFBDEF6700A1 /* BaiduVoiceAI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D2B603061EA8AA499217A07047962629 /* BaiduVoiceAI-BaiduVoiceAI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 598AACEAA41BF55569EE80709C4D9893 /* Build configuration list for PBXNativeTarget "BaiduVoiceAI-BaiduVoiceAI" */;
+			buildPhases = (
+				5D8BA480CCB156E5EEA21C454C6D300E /* Sources */,
+				38BDFB335892159CA793CC1613E4D9DC /* Frameworks */,
+				1E458A06E6E9AD3FCE527A9E9CEC65F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BaiduVoiceAI-BaiduVoiceAI";
+			productName = "BaiduVoiceAI-BaiduVoiceAI";
+			productReference = 064758A88F9FD0850C3B9AFF6AF6D217 /* BaiduVoiceAI.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 5889DF5B8F6579152DE60EB895996C51 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE4118D5E9767A7AAE75973298F7D3EE /* BaiduVoiceAI */,
+				D2B603061EA8AA499217A07047962629 /* BaiduVoiceAI-BaiduVoiceAI */,
+				432D7754B5B960CD5623A0AD38725BEC /* Pods-BaiduVoiceAI_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1E458A06E6E9AD3FCE527A9E9CEC65F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C72FE89830B54986368E7570D23E79F /* ASR in Resources */,
+				C82C5DF877AFE823C79465DE20DFDF03 /* TTS in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CE2A8A083F7114DD4101F4662490D25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFB20236718CEBA017AC5D5859371964 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97B17B65ADEEF8974A4AC707E46F658B /* BaiduVoiceAI.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18964D3F0289B5554FC3525909DA3201 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D897C13E7E364E0564B4391C94AB52EB /* Pods-BaiduVoiceAI_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D8BA480CCB156E5EEA21C454C6D300E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B7E20A032039594F03F2CB5E107F1A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA049A0BC24C7A271E617D603DB0F35F /* BaiduVoiceAI-dummy.m in Sources */,
+				28112490B493FEC8AFE24639EDDA57D7 /* libBaiduSpeechSDK.a in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0BCBEDD7956C73BABDA2DFAE96B42B58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BaiduVoiceAI;
+			target = AE4118D5E9767A7AAE75973298F7D3EE /* BaiduVoiceAI */;
+			targetProxy = 198CECDE34F58697183F0B9567BEB6F4 /* PBXContainerItemProxy */;
+		};
+		BA9AFE61D51199D43D0BE7D0C1919F50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "BaiduVoiceAI-BaiduVoiceAI";
+			target = D2B603061EA8AA499217A07047962629 /* BaiduVoiceAI-BaiduVoiceAI */;
+			targetProxy = 7DC30AE1F4C3024789A27A5E8D6126E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05D41A8228FECAF91F1AA1E59DFB3DD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71BA7CF287D0BD57C33E389D7FFA7096 /* Pods-BaiduVoiceAI_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BaiduVoiceAI_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BaiduVoiceAI_Tests/Pods-BaiduVoiceAI_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		16D8C91DD9507378B5AD48D9EC355DAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 183E4BC6027EAD996AD51B5672EC6D3F /* BaiduVoiceAI.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BaiduVoiceAI/BaiduVoiceAI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BaiduVoiceAI/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BaiduVoiceAI/BaiduVoiceAI.modulemap";
+				PRODUCT_MODULE_NAME = BaiduVoiceAI;
+				PRODUCT_NAME = BaiduVoiceAI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		39D32ABF257004816DD8B005D45C57A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 183E4BC6027EAD996AD51B5672EC6D3F /* BaiduVoiceAI.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BaiduVoiceAI";
+				INFOPLIST_FILE = "Target Support Files/BaiduVoiceAI/ResourceBundle-BaiduVoiceAI-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = BaiduVoiceAI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		515C8580B96906C657B0D9022C97CE8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 183E4BC6027EAD996AD51B5672EC6D3F /* BaiduVoiceAI.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BaiduVoiceAI/BaiduVoiceAI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BaiduVoiceAI/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BaiduVoiceAI/BaiduVoiceAI.modulemap";
+				PRODUCT_MODULE_NAME = BaiduVoiceAI;
+				PRODUCT_NAME = BaiduVoiceAI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		56A05ADD3BABDA1B56D1F979845809B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		60F106E23BCBB81640296F518D023012 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23147D8D798CF3D7242408237AED79BE /* Pods-BaiduVoiceAI_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BaiduVoiceAI_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BaiduVoiceAI_Tests/Pods-BaiduVoiceAI_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		70A3C20C1804280C17461D071EF83295 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 183E4BC6027EAD996AD51B5672EC6D3F /* BaiduVoiceAI.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BaiduVoiceAI";
+				INFOPLIST_FILE = "Target Support Files/BaiduVoiceAI/ResourceBundle-BaiduVoiceAI-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = BaiduVoiceAI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		BEFDB93BF207328A04F1220475D02C3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEFDB93BF207328A04F1220475D02C3B /* Debug */,
+				56A05ADD3BABDA1B56D1F979845809B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5140CABA34743340E8FC92D4D418EA61 /* Build configuration list for PBXNativeTarget "Pods-BaiduVoiceAI_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60F106E23BCBB81640296F518D023012 /* Debug */,
+				05D41A8228FECAF91F1AA1E59DFB3DD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		598AACEAA41BF55569EE80709C4D9893 /* Build configuration list for PBXNativeTarget "BaiduVoiceAI-BaiduVoiceAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70A3C20C1804280C17461D071EF83295 /* Debug */,
+				39D32ABF257004816DD8B005D45C57A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D51DDB179AD294C88E288AFC01ECD90B /* Build configuration list for PBXNativeTarget "BaiduVoiceAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				515C8580B96906C657B0D9022C97CE8C /* Debug */,
+				16D8C91DD9507378B5AD48D9EC355DAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
