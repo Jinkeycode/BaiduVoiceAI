@@ -1,0 +1,40 @@
+{
+  "name": "BaiduVoiceAI",
+  "version": "3.0.5",
+  "summary": "A cocoapods of BaiduVoiceAI.",
+  "description": "Use Cocoapods to install BaiduVoiceAI.",
+  "homepage": "https://github.com/Jinkeycode/BaiduVoiceAI",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Jinkeycode": "dats0354@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Jinkeycode/BaiduVoiceAI.git",
+    "tag": "3.0.5"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "BaiduVoiceAI/Classes/**/*.a",
+  "resource_bundles": {
+    "BaiduVoiceAI": [
+      "BaiduVoiceAI/Assets/*"
+    ]
+  },
+  "frameworks": [
+    "AudioToolbox",
+    "AVFoundation",
+    "CFNetwork",
+    "CoreLocation",
+    "CoreTelephony",
+    "SystemConfiguration",
+    "GLKit"
+  ],
+  "libraries": [
+    "c++",
+    "z.1.2.5"
+  ]
+}

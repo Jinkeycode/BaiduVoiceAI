@@ -1,0 +1,6 @@
+framework module BaiduVoiceAI {
+  umbrella header "BaiduVoiceAI-umbrella.h"
+
+  export *
+  module * { export * }
+}

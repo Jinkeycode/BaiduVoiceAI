@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BaiduVoiceAI'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of BaiduVoiceAI.'
+  s.version          = '3.0.5'
+  s.summary          = 'A cocoapods of BaiduVoiceAI.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Use Cocoapods to install BaiduVoiceAI.
                        DESC
 
   s.homepage         = 'https://github.com/Jinkeycode/BaiduVoiceAI'
@@ -30,13 +30,13 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'BaiduVoiceAI/Classes/**/*'
+  s.source_files = 'BaiduVoiceAI/Classes/**/*.a'
   
-  # s.resource_bundles = {
-  #   'BaiduVoiceAI' => ['BaiduVoiceAI/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.resource_bundles = {
+    'BaiduVoiceAI' => ['BaiduVoiceAI/Assets/*']
+  }
+  # s.public_header_files = 'BaiduVoiceAI/Classes/BDSClientHeaders/**/*.h'
+  s.frameworks = 'AudioToolbox', 'AVFoundation', 'CFNetwork', 'CoreLocation', 'CoreTelephony', 'SystemConfiguration', 'GLKit'
+  s.libraries = 'c++', 'z.1.2.5'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

@@ -1,0 +1,16 @@
+PODS:
+  - BaiduVoiceAI (3.0.5)
+
+DEPENDENCIES:
+  - BaiduVoiceAI (from `../`)
+
+EXTERNAL SOURCES:
+  BaiduVoiceAI:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BaiduVoiceAI: 73a5cfc03ce4ae02001dcfa9b81710d35bca6abf
+
+PODFILE CHECKSUM: daff68677d78ae4bcc665bc7236ade53eb0ea6a4
+
+COCOAPODS: 1.5.3
