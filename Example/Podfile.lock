@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  BaiduVoiceAI: 73a5cfc03ce4ae02001dcfa9b81710d35bca6abf
+  BaiduVoiceAI: cbe5a0f1087513600e16edfa13bcfb3dcd767cf1
 
 PODFILE CHECKSUM: daff68677d78ae4bcc665bc7236ade53eb0ea6a4
 

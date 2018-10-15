@@ -128,7 +128,7 @@
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				777456EEC05E4C59BAA8D742 /* [CP] Embed Pods Frameworks */,
+				0786D6B68149515356392825 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -184,7 +184,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		777456EEC05E4C59BAA8D742 /* [CP] Embed Pods Frameworks */ = {
+		0786D6B68149515356392825 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -192,18 +192,18 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-BaiduVoiceAI_Tests/Pods-BaiduVoiceAI_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/BaiduVoiceAI/BaiduVoiceAI.framework",
+				"${SRCROOT}/Pods/Target Support Files/Pods-BaiduVoiceAI_Tests/Pods-BaiduVoiceAI_Tests-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/BaiduVoiceAI/BaiduVoiceAI.bundle",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BaiduVoiceAI.framework",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BaiduVoiceAI.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BaiduVoiceAI_Tests/Pods-BaiduVoiceAI_Tests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BaiduVoiceAI_Tests/Pods-BaiduVoiceAI_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C76E2AE578549135C9382BEF /* [CP] Check Pods Manifest.lock */ = {

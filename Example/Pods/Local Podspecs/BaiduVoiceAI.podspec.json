@@ -18,12 +18,14 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "BaiduVoiceAI/Classes/**/*.a",
+  "source_files": "BaiduVoiceAI/Classes/**/*.{h,m}",
   "resource_bundles": {
     "BaiduVoiceAI": [
       "BaiduVoiceAI/Assets/*"
     ]
   },
+  "public_header_files": "BaiduVoiceAI/Classes/**/*.h",
+  "vendored_libraries": "BaiduVoiceAI/Classes/BDSClientLib/libBaiduSpeechSDK.a",
   "frameworks": [
     "AudioToolbox",
     "AVFoundation",

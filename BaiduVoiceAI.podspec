@@ -30,12 +30,13 @@ Use Cocoapods to install BaiduVoiceAI.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'BaiduVoiceAI/Classes/**/*.a'
+  s.source_files = 'BaiduVoiceAI/Classes/**/*.{h,m}'
   
   s.resource_bundles = {
     'BaiduVoiceAI' => ['BaiduVoiceAI/Assets/*']
   }
-  # s.public_header_files = 'BaiduVoiceAI/Classes/BDSClientHeaders/**/*.h'
+  s.public_header_files = 'BaiduVoiceAI/Classes/**/*.h'
+  s.vendored_libraries = 'BaiduVoiceAI/Classes/BDSClientLib/libBaiduSpeechSDK.a'
   s.frameworks = 'AudioToolbox', 'AVFoundation', 'CFNetwork', 'CoreLocation', 'CoreTelephony', 'SystemConfiguration', 'GLKit'
   s.libraries = 'c++', 'z.1.2.5'
   # s.dependency 'AFNetworking', '~> 2.3'

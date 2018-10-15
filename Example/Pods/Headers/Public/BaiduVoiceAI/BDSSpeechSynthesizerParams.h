@@ -1,0 +1,1 @@
+../../../../../BaiduVoiceAI/Classes/BDSClientHeaders/TTS/BDSSpeechSynthesizerParams.h
